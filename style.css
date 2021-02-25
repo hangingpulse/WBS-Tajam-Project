@@ -1,10 +1,5 @@
 /**** General Style ****/
 
-#0c0072
-#2f1c61
-#00a8d0
-#00c9c2
-
 * {
     padding: 0;
     margin: 0;
@@ -30,16 +25,24 @@ h2 {
     text-transform: uppercase;
     margin-bottom: 0.3rem;
 }
-  
-h3 {
-    text-transform: uppercase;
-    font-size: 0.7rem;
-}
 
 .sub-headline {
     font-family: "Didot", serif;
     font-weight: 300;
     font-size: 1rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+
+hr {
+    background-color: grey;
+    height: 2px;
+    margin: 1rem auto;
+    width: 50px;
 }
 
   /* header section (marc) */
@@ -50,18 +53,11 @@ h3 {
   
   /* video section  */
   
-  /* experstise section (henning) */
+  /* expertise section (henning) - not responsive yet */
 
 
 #expertise {
     padding: 80px 0;
-}
-
-hr {
-    background-color: grey;
-    height: 2px;
-    margin: 1rem auto;
-    width: 50px;
 }
 
 .expertise-all {
@@ -94,23 +90,33 @@ hr {
     margin-top: 1rem;
 }
 
-
-
 /******* different classes to style the borders for the grid ******/
 
-.border-r {
-    border-right: 1px solid rgb(207, 206, 206);
-}
-
-.border-rb {
+.element1 {
     border-right: 1px solid rgb(207, 206, 206);
     border-bottom: 1px solid rgb(207, 206, 206);
 }
 
-.border-b {
+.element2 {
+    border-right: 1px solid rgb(207, 206, 206);
     border-bottom: 1px solid rgb(207, 206, 206);
 }
 
+.element3 {
+    border-bottom: 1px solid rgb(207, 206, 206);
+}
+
+.element4 {
+    border-right: 1px solid rgb(207, 206, 206);
+}
+
+.element5 {
+    border-right: 1px solid rgb(207, 206, 206);
+}
+
+.element6 {
+    
+}
 
   
   /* team section  */
