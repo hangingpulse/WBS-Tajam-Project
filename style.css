@@ -1,27 +1,47 @@
 /**** General Style ****/
 
+#0c0072
+#2f1c61
+#00a8d0
+#00c9c2
+
 * {
     padding: 0;
     margin: 0;
     border: 0;
-  }
+    text-align: center;
+}
   
-  body {
-    font-family: "Merriweather Sans", sans-serif;
-  }
-  
-  a {
+body {
+    font-family: "Helvetica", sans-serif;
+}
+
+a {
     text-decoration: none;
-  }
+}
+
+h1 {
+    font-family: "Didot", serif;
+}
   
-  h1 {
-    font-family: "Merriweather", serif;
-  }
+h2 {
+    font-family: "Didot", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
   
-  h2 {
-    font-family: "Merriweather", serif;
-  }
-  
+h3 {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.sub-headline {
+    font-family: "Didot", serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
   /* header section (marc) */
   
   /* main section */
@@ -31,6 +51,67 @@
   /* video section  */
   
   /* experstise section (henning) */
+
+
+#expertise {
+    padding: 80px 0;
+}
+
+hr {
+    background-color: grey;
+    height: 2px;
+    margin: 1rem auto;
+    width: 50px;
+}
+
+.expertise-all {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 45%;
+}
+
+.expertise-elements {
+    text-align: center;
+    width: 220px;
+    padding: 1.3rem; 
+}
+
+.expertise-elements img {
+    height: 38px;
+}
+
+.expertise-elements h3 {
+    margin-top: 1rem;
+}
+
+.expertise-elements p {
+    font-size: 0.8rem;
+    font-weight: 100;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+
+
+/******* different classes to style the borders for the grid ******/
+
+.border-r {
+    border-right: 1px solid rgb(207, 206, 206);
+}
+
+.border-rb {
+    border-right: 1px solid rgb(207, 206, 206);
+    border-bottom: 1px solid rgb(207, 206, 206);
+}
+
+.border-b {
+    border-bottom: 1px solid rgb(207, 206, 206);
+}
+
+
   
   /* team section  */
   
