@@ -50,10 +50,16 @@
   
   /* footer section (roberto)  */
   footer {
-    margin: 0 auto;
-    max-width: 960px;
+    background: url("./img/bgk-footer.png");
+    background-size: cover;
+    color: white;
   }
 
+  .footer-top,
+  .footer-bottom {
+    max-width: 960px;
+    margin: 0 auto;
+  }
   .footer-top section {
     width: 100%;
   }
@@ -72,4 +78,13 @@
 
   .footer-bottom nav {
     flex-grow: 2;
+  }
+
+  #btn-newsletter {
+    background: url("./img/paper122.png") no-repeat center;
+    background-size: 25px 25px;
+    height: 44px;
+    width: 70px;
+    background-color: white;
+    opacity: 0.5;
   }
