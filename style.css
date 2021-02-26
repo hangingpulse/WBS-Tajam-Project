@@ -54,10 +54,17 @@ nav {
   align-items: center;
   width: 100vw;
   padding: 10px;
+  justify-content: space-around;
+  
+}
+
+li {
+
 }
 
 header nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   flex-grow: 1;
   list-style: none;
