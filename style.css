@@ -152,6 +152,44 @@ hr {
   
   /* team section  */
   
+#team {
+    background-image: url('img/bgk-header.png');
+    background-size: cover;
+    height: 520px;
+    color: white;
+    padding: 3rem;
+}
+
+.photos {
+    max-width: 960px;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+}
+
+.photo-box {
+    color: white;
+    margin: 0 0.5rem;
+    border: 1px solid grey;
+}
+
+.photo-box p {
+    font-size: 0.7rem;
+    font-weight: 100;
+    margin: 0.5rem 0 0.8rem 0;
+}
+
+.photo-placeholder {
+    width: 200px;
+    height: 210px;
+    background: white;
+    margin-bottom: 1rem;
+}
+
+#team button {
+    margin-top: 2rem; 
+}
+
+
   /* contact section  */
   
   /* footer section (roberto)  */
