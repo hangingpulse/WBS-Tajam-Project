@@ -94,9 +94,10 @@ hr {
 .expertise-all {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
     margin-top: 3rem;
-    width: 45%;
+    max-width: 960px;
 }
 
 .expertise-elements {
@@ -121,33 +122,87 @@ hr {
     margin-top: 1rem;
 }
 
+
 /******* different classes to style the borders for the grid ******/
 
-.element1 {
-    border-right: 1px solid rgb(207, 206, 206);
-    border-bottom: 1px solid rgb(207, 206, 206);
-}
-
-.element2 {
-    border-right: 1px solid rgb(207, 206, 206);
-    border-bottom: 1px solid rgb(207, 206, 206);
-}
-
-.element3 {
-    border-bottom: 1px solid rgb(207, 206, 206);
-}
-
-.element4 {
-    border-right: 1px solid rgb(207, 206, 206);
-}
-
-.element5 {
-    border-right: 1px solid rgb(207, 206, 206);
-}
-
-.element6 {
+@media (max-width: 524px) {
+    .element1 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+        border-right: 1px solid white;
+    }
     
+    .element2 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element3 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+        border-right: 1px solid white;
+    }
+    
+    .element4 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element5 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+        border-right: 1px solid white;
+
+    }
+
+
 }
+
+
+@media (max-width: 800px) and (min-width: 525px) {
+    .element1 {
+        border-right: 1px solid rgb(207, 206, 206);
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element2 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element3 {
+        border-right: 1px solid rgb(207, 206, 206);
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element4 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element5 {
+        border-right: 1px solid rgb(207, 206, 206);
+    }
+
+}
+
+@media (min-width: 800px) {
+    .element1 {
+        border-right: 1px solid rgb(207, 206, 206);
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+
+    .element2 {
+        border-right: 1px solid rgb(207, 206, 206);
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+
+    .element3 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+
+    .element4 {
+        border-right: 1px solid rgb(207, 206, 206);
+    }
+
+    .element5 {
+        border-right: 1px solid rgb(207, 206, 206);
+    }
+}
+
 
   
   /* team section  */
