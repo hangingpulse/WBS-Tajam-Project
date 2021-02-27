@@ -56,7 +56,7 @@ hr {
 
 /*button added by marc*/
 
-header button {
+button {
   border: 1px solid #00c9c2;
   padding: 10px;
   margin: 30px;
@@ -68,13 +68,12 @@ header button {
 
 header {
   background-image: url("img/bgk-header.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 110%;
+  width: 100%;
   height: 960px;
   overflow: hidden;
   justify-content: center;
-
 }
 
 .logobox {
@@ -164,17 +163,34 @@ header button {
 }
 */
 
-#header-button {
+#learn-more {
   color: #00c9c2;
 }
 
-#header-button a:visited {
+#learn-more a:visited {
   color: #00c9c2;
 }
 
   /* main section */
 
   /* story section  */
+
+#our-story {
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.story img {
+  padding: 50px 0px;
+}
+
+.story-text {
+  padding: 50px 50px;
+}
 
   /* video section  */
 
