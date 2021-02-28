@@ -185,6 +185,26 @@ header nav ul {
 }
 
   /* video section  */
+  
+#video {
+    background-image: url("img/bgk-middle.png");
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#video img {
+    max-width: 103px; 
+    margin-bottom: 1rem;
+}
+
+#video h3 {
+    color: white;
+}
+
 
 
   /* expertise section (henning) - not responsive yet */
@@ -197,9 +217,10 @@ header nav ul {
 .expertise-all {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
     margin-top: 3rem;
-    width: 45%;
+    max-width: 960px;
 }
 
 .expertise-elements {
@@ -224,37 +245,130 @@ header nav ul {
     margin-top: 1rem;
 }
 
+
 /******* different classes to style the borders for the grid ******/
 
-.element1 {
-    border-right: 1px solid rgb(207, 206, 206);
-    border-bottom: 1px solid rgb(207, 206, 206);
-}
-
-.element2 {
-    border-right: 1px solid rgb(207, 206, 206);
-    border-bottom: 1px solid rgb(207, 206, 206);
-}
-
-.element3 {
-    border-bottom: 1px solid rgb(207, 206, 206);
-}
-
-.element4 {
-    border-right: 1px solid rgb(207, 206, 206);
-}
-
-.element5 {
-    border-right: 1px solid rgb(207, 206, 206);
-}
-
-.element6 {
+@media (max-width: 524px) {
+    .element1 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+        border-right: 1px solid white;
+    }
     
+    .element2 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element3 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+        border-right: 1px solid white;
+    }
+    
+    .element4 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element5 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+        border-right: 1px solid white;
+
+    }
+
+
 }
+
+
+@media (max-width: 800px) and (min-width: 525px) {
+    .element1 {
+        border-right: 1px solid rgb(207, 206, 206);
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element2 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element3 {
+        border-right: 1px solid rgb(207, 206, 206);
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element4 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element5 {
+        border-right: 1px solid rgb(207, 206, 206);
+    }
+
+}
+
+@media (min-width: 800px) {
+    .element1 {
+        border-right: 1px solid rgb(207, 206, 206);
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+
+    .element2 {
+        border-right: 1px solid rgb(207, 206, 206);
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+
+    .element3 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+
+    .element4 {
+        border-right: 1px solid rgb(207, 206, 206);
+    }
+
+    .element5 {
+        border-right: 1px solid rgb(207, 206, 206);
+    }
+}
+
 
   
 
   /* team section  */
+
+  
+#team {
+    background-image: url('img/bgk-header.png');
+    background-size: cover;
+    height: 520px;
+    color: white;
+    padding: 3rem;
+}
+
+.photos {
+    max-width: 960px;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+}
+
+.photo-box {
+    color: white;
+    margin: 0 0.5rem;
+    border: 1px solid grey;
+}
+
+.photo-box p {
+    font-size: 0.7rem;
+    font-weight: 100;
+    margin: 0.5rem 0 0.8rem 0;
+}
+
+.photo-placeholder {
+    width: 200px;
+    height: 210px;
+    background: white;
+    margin-bottom: 1rem;
+}
+
+#team button {
+    margin-top: 2rem; 
+}
+
 
   /* contact section  */
 
