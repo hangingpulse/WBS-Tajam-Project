@@ -6,7 +6,7 @@
     border: 0;
     text-align: center;
 }
-  
+
 body {
     font-family: "Helvetica", sans-serif;
 }
@@ -16,20 +16,21 @@ a {
 }
 
 h1, h2 {
+
    font-family: "Didot", serif; 
 }
-  
+ 
   .container {
     border: 2px solid royalblue;
     display: flex;
     justify-content: center;
   }
-  
+
   .inline-container {
     border: 2px solid salmon;
     display: inline-flex;
   }
-  
+
 h2 {
     font-weight: 600;
     text-transform: uppercase;
@@ -54,12 +55,135 @@ hr {
     width: 50px;
 }
 
-  /* header section (marc) */
-  
+
+/*button added by marc*/
+
+button {
+  border: 1px solid #00c9c2;
+  padding: 10px;
+  margin: 30px;
+  background-color: transparent;
+  color: #00c9c2;
+}
+
+/* header section (marc) */
+
+header {
+  background-image: url("img/bgk-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 960px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.logobox {
+  display: flex;
+  align-items: center;
+  padding-left: 300px;
+}
+
+.logo-text {
+  color: #00c9c2;
+  font-weight: 1;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  padding: 10px;
+  /*
+  max-width: 960px;
+*/
+}
+
+.header-list {
+  margin-left: 280px;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  flex-grow: 1;
+  list-style: none;
+  margin: 0 auto;
+  /*
+  margin-left: 100px;
+  margin-right: 50px;
+  */
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  max-width: 600px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  color: white;
+  margin-top: 150px;
+  margin-bottom: 25px;
+}
+
+.title hr {
+  width: 40px;
+  height: 1px;
+  border: 5px;
+  margin: auto;
+  background-color: #00c9c2;
+}
+
+.title p {
+  color: white;
+  font-weight: 10;
+  margin: 25px;
+}
+
+.home-button {
+  color: #00c9c2;
+}
+
+.nav-link-button {
+  color: white;
+}
+
+#learn-more {
+  color: #00c9c2;
+}
+
+#learn-more a:visited {
+  color: #00c9c2;
+}
+
   /* main section */
-  
+
   /* story section  */
-  
+
+#our-story {
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.story img {
+  padding: 50px 0px;
+}
+
+.story-text {
+  padding: 50px 50px;
+}
+
   /* video section  */
   
 #video {
@@ -80,7 +204,6 @@ hr {
 #video h3 {
     color: white;
 }
-
 
 
 
@@ -205,7 +328,9 @@ hr {
 
 
   
+
   /* team section  */
+
   
 #team {
     background-image: url('img/bgk-header.png');
@@ -246,8 +371,9 @@ hr {
 
 
   /* contact section  */
-  
+
   /* footer section (roberto)  */
+
   footer {
     margin: 0 auto;
     max-width: 960px;
@@ -272,3 +398,4 @@ hr {
   .footer-bottom nav {
     flex-grow: 2;
   }
+
