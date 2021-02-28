@@ -6,7 +6,7 @@
     border: 0;
     text-align: center;
 }
-  
+
 body {
     font-family: "Helvetica", sans-serif;
 }
@@ -16,6 +16,7 @@ a {
 }
 
 h1, h2 {
+
    font-family: "Didot", serif; 
 }
   
@@ -48,14 +49,158 @@ hr {
     width: 50px;
 }
 
-  /* header section (marc) */
-  
+
+/*button added by marc*/
+
+button {
+  border: 1px solid #00c9c2;
+  padding: 10px;
+  margin: 30px;
+  background-color: transparent;
+  color: #00c9c2;
+}
+
+/* header section (marc) */
+
+header {
+  background-image: url("img/bgk-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 960px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.logobox {
+  display: flex;
+  align-items: center;
+  padding-left: 300px;
+}
+
+.logo-text {
+  color: #00c9c2;
+  font-weight: 1;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  padding: 10px;
+  /*
+  max-width: 960px;
+*/
+}
+
+.header-list {
+  margin-left: 280px;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  flex-grow: 1;
+  list-style: none;
+  margin: 0 auto;
+  /*
+  margin-left: 100px;
+  margin-right: 50px;
+  */
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  max-width: 600px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  color: white;
+  margin-top: 150px;
+  margin-bottom: 25px;
+}
+
+.title hr {
+  width: 40px;
+  height: 1px;
+  border: 5px;
+  margin: auto;
+  background-color: #00c9c2;
+}
+
+.title p {
+  color: white;
+  font-weight: 10;
+  margin: 25px;
+}
+
+.home-button {
+  color: #00c9c2;
+}
+
+.nav-link-button {
+  color: white;
+}
+
+#learn-more {
+  color: #00c9c2;
+}
+
+#learn-more a:visited {
+  color: #00c9c2;
+}
+
   /* main section */
-  
+
   /* story section  */
-  
+
+#our-story {
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.story img {
+  padding: 50px 0px;
+}
+
+.story-text {
+  padding: 50px 50px;
+}
+
   /* video section  */
   
+#video {
+    background-image: url("img/bgk-middle.png");
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#video img {
+    max-width: 103px; 
+    margin-bottom: 1rem;
+}
+
+#video h3 {
+    color: white;
+}
+
+
+
   /* expertise section (henning) - not responsive yet */
 
 
@@ -66,9 +211,10 @@ hr {
 .expertise-all {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
     margin-top: 3rem;
-    width: 45%;
+    max-width: 960px;
 }
 
 .expertise-elements {
@@ -93,38 +239,129 @@ hr {
     margin-top: 1rem;
 }
 
+
 /******* different classes to style the borders for the grid ******/
 
-.element1 {
-    border-right: 1px solid rgb(207, 206, 206);
-    border-bottom: 1px solid rgb(207, 206, 206);
-}
-
-.element2 {
-    border-right: 1px solid rgb(207, 206, 206);
-    border-bottom: 1px solid rgb(207, 206, 206);
-}
-
-.element3 {
-    border-bottom: 1px solid rgb(207, 206, 206);
-}
-
-.element4 {
-    border-right: 1px solid rgb(207, 206, 206);
-}
-
-.element5 {
-    border-right: 1px solid rgb(207, 206, 206);
-}
-
-.element6 {
+@media (max-width: 524px) {
+    .element1 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+        border-right: 1px solid white;
+    }
     
+    .element2 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element3 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+        border-right: 1px solid white;
+    }
+    
+    .element4 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element5 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+        border-right: 1px solid white;
+
+    }
+
+
 }
 
-  
+
+@media (max-width: 800px) and (min-width: 525px) {
+    .element1 {
+        border-right: 1px solid rgb(207, 206, 206);
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element2 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element3 {
+        border-right: 1px solid rgb(207, 206, 206);
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element4 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+    
+    .element5 {
+        border-right: 1px solid rgb(207, 206, 206);
+    }
+
+}
+
+@media (min-width: 800px) {
+    .element1 {
+        border-right: 1px solid rgb(207, 206, 206);
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+
+    .element2 {
+        border-right: 1px solid rgb(207, 206, 206);
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+
+    .element3 {
+        border-bottom: 1px solid rgb(207, 206, 206);
+    }
+
+    .element4 {
+        border-right: 1px solid rgb(207, 206, 206);
+    }
+
+    .element5 {
+        border-right: 1px solid rgb(207, 206, 206);
+    }
+}
+
+
 /* team section  */
 
-/* contact section  */
+  
+#team {
+    background-image: url('img/bgk-header.png');
+    background-size: cover;
+    height: 520px;
+    color: white;
+    padding: 3rem;
+}
+
+.photos {
+    max-width: 960px;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+}
+
+.photo-box {
+    color: white;
+    margin: 0 0.5rem;
+    border: 1px solid grey;
+}
+
+.photo-box p {
+    font-size: 0.7rem;
+    font-weight: 100;
+    margin: 0.5rem 0 0.8rem 0;
+}
+
+.photo-placeholder {
+    width: 200px;
+    height: 210px;
+    background: white;
+    margin-bottom: 1rem;
+}
+
+#team button {
+    margin-top: 2rem; 
+}
+
+/********** contact section  **********/
 
 #contact {
   margin: 0 auto;
@@ -191,28 +428,109 @@ hr {
   width: 160px;
 }
 
-/* footer section (roberto)  */
+/********* footer section (roberto)  **********/
+
 footer {
-  margin: 0 auto;
+  background: url("./img/bgk-footer.png");
+  background-size: cover;
+  color: white;
+  padding-top: 70px;
+}
+
+.footer-top,
+.footer-bottom {
   max-width: 960px;
+  margin: 0 auto;
 }
 
 .footer-top section {
   width: 100%;
+  margin: 0 10px;
+}
+
+.footer-top p {
+  text-align: left;
+}
+
+.footer-bottom {    
+  margin-top: 77px;
+  padding-bottom: 70px;
+}
+
+.footer-bottom nav {
+  flex-grow: 2;
+}
+
+.footer-bottom li {
+  padding-right: 32px;
 }
 
 footer ul {
   list-style: none;
 }
 
-footer li {
-  padding: 5px;
+footer h3 {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+footer p {
+  line-height: 30px;
 }
 
 .footer-menu ul{
   justify-content: left;
 }
 
-.footer-bottom nav {
-  flex-grow: 2;
+#logo-footer {
+  justify-content: left;
+}
+
+#logo-footer img {
+  position: relative;
+  top: -20px;
+}
+
+#logo-footer p,
+#logo-footer span {
+  margin-left: 10px;
+}
+
+#newsletter-form input {
+  border: 1px solid #9d95af;    
+}
+
+#email-newsletter {
+  background-color: transparent;
+  width: 210px;
+}
+
+#btn-newsletter {
+  background: url("./img/paper122.png") no-repeat center;
+  background-size: 25px 25px;
+  height: 44px;
+  width: 70px;
+  background-color: white;
+  opacity: 0.5;
+  margin-left: 10px;
+}
+
+#newsletter-form {
+  display: flex;
+}
+
+#social-networks{
+  justify-content: left;
+  margin-top: 27px;
+}
+
+#social-networks li {
+  padding-right: 8px;
+}
+
+#our-studio img {
+  position: relative;
+  top: 3px;
+  margin-right: 15px;
+  height: 21px;
 }
