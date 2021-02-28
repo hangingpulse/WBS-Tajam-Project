@@ -88,3 +88,18 @@
     background-color: white;
     opacity: 0.5;
   }
+
+  #newsletter-form {
+    display: flex;
+  }
+
+  #newsletter-form input {
+    background-color: transparent;
+    border: 1px solid #9d95af;
+  }
+
+  #social-networks{
+    justify-content: left;
+  }
+  
+ 
