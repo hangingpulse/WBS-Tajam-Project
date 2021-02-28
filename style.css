@@ -16,9 +16,10 @@ a {
 }
 
 h1, h2 {
-   font-family: "Didot", serif;
-}
 
+   font-family: "Didot", serif; 
+}
+ 
   .container {
     border: 2px solid royalblue;
     display: flex;
@@ -54,6 +55,7 @@ hr {
     width: 50px;
 }
 
+
 /*button added by marc*/
 
 button {
@@ -64,7 +66,7 @@ button {
   color: #00c9c2;
 }
 
-  /* header section (marc) */
+/* header section (marc) */
 
 header {
   background-image: url("img/bgk-header.png");
@@ -153,16 +155,6 @@ header nav ul {
   color: white;
 }
 
-/*
-header button {
-  border: 1px solid #00c9c2;
-  padding: 10px;
-  margin: 30px;
-  background-color: transparent;
-  color: #00c9c2;
-}
-*/
-
 #learn-more {
   color: #00c9c2;
 }
@@ -194,10 +186,102 @@ header button {
 
   /* video section  */
 
-  /* experstise section (henning) */
+
+  /* expertise section (henning) - not responsive yet */
+
+
+#expertise {
+    padding: 80px 0;
+}
+
+.expertise-all {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 45%;
+}
+
+.expertise-elements {
+    text-align: center;
+    width: 220px;
+    padding: 1.3rem; 
+}
+
+.expertise-elements img {
+    height: 38px;
+}
+
+.expertise-elements h3 {
+    margin-top: 1rem;
+}
+
+.expertise-elements p {
+    font-size: 0.8rem;
+    font-weight: 100;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+/******* different classes to style the borders for the grid ******/
+
+.element1 {
+    border-right: 1px solid rgb(207, 206, 206);
+    border-bottom: 1px solid rgb(207, 206, 206);
+}
+
+.element2 {
+    border-right: 1px solid rgb(207, 206, 206);
+    border-bottom: 1px solid rgb(207, 206, 206);
+}
+
+.element3 {
+    border-bottom: 1px solid rgb(207, 206, 206);
+}
+
+.element4 {
+    border-right: 1px solid rgb(207, 206, 206);
+}
+
+.element5 {
+    border-right: 1px solid rgb(207, 206, 206);
+}
+
+.element6 {
+    
+}
+
+  
 
   /* team section  */
 
   /* contact section  */
 
   /* footer section (roberto)  */
+
+  footer {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  .footer-top section {
+    width: 100%;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+
+  footer li {
+    padding: 5px;
+  }
+
+  .footer-menu ul{
+    justify-content: left;
+  }
+
+  .footer-bottom nav {
+    flex-grow: 2;
+  }
+
