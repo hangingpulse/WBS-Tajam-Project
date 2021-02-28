@@ -19,16 +19,10 @@ h1, h2 {
    font-family: "Didot", serif; 
 }
   
-  .container {
-    border: 2px solid royalblue;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .inline-container {
-    border: 2px solid salmon;
-    display: inline-flex;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+}
   
 h2 {
     font-weight: 600;
@@ -134,12 +128,14 @@ hr {
 
 #contact {
   margin: 0 auto;
+  padding-bottom: 70px;
+  padding-top: 100px;
   max-width: 960px;
-  text-align: left;
-  padding-bottom: 320px;
+  text-align: left;  
 }
 
-#contact h2 {
+#contact h2,
+#contact form {
   text-align: left;
   padding-left: 10px;
 }
@@ -156,6 +152,29 @@ hr {
 #give-us-contact form {
   width: 100%;
   padding-right: 100px;
+}
+
+#give-us-contact input {  
+  background-color: transparent;
+  margin-bottom: 22px;
+  height: 45px;
+}
+
+#give-us-contact input,
+#give-us-contact textarea {
+  border: 1px solid #e5e5e5;
+  color: #e5e5e5;
+  text-align: left;
+  width: 100%;
+}
+
+#give-us-contact textarea {
+  height: 205px;
+}
+
+#give-us-contact ::placeholder {
+  color: #e5e5e5;
+  padding: 22px;
 }
 
 #logos-left,
