@@ -70,7 +70,6 @@ header {
   background-image: url("img/bgk-header.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
   overflow: hidden;
   justify-content: center;
   display: flex;
