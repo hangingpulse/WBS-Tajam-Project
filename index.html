@@ -15,32 +15,32 @@
   <body>
     <!-- header-section  -->
 
-    <header class="header">
-      <nav>
+    <header class="section section--background-img header">
+      <nav class="navbar max-width">
         <div class="logobox">
           <img class="logobox__logo" src="img/logo.png" alt="logo" />
           <p class="logobox__logo-text">tajam</p>
         </div>
-        <ul class="header-list" alt="nav">
-          <li><a class="home-button" href="#">HOME</a></li>
-          <li><a class="nav-link-button" href="#our-story">ABOUT</a></li>
-          <li><a class="nav-link-button" href="#expertise">EXPERTISE</a></li>
-          <li><a class="nav-link-button" href="#teams">TEAMS</a></li>
-          <li><a class="nav-link-button" href="#">WORKS</a></li>
-          <li><a class="nav-link-button" href="#">PEOPLE SAY</a></li>
-          <li><a class="nav-link-button" href="#news">CONTACT</a></li>
-        </ul>
+        <div class="navbar__nav-list" alt="navbar">
+          <p class="navbar__nav-list-items"><a class="link link--navbar" href="#">Home</a></p>
+          <p class="navbar__nav-list-items"><a class="link link--navbar" href="#our-story">About</a></p>
+          <p class="navbar__nav-list-items"><a class="link link--navbar" href="#expertise">Expertise</a></p>
+          <p class="navbar__nav-list-items"><a class="link link--navbar" href="#teams">Teams</a></p>
+          <p class="navbar__nav-list-items"><a class="link link--navbar" href="#">Works</a></p>
+          <p class="navbar__nav-list-items"><a class="link link--navbar" href="#">People say</a></p>
+          <p class="navbar__nav-list-items"><a class="link link--navbar" href="#news">Contact</a></p>
+        </div>
       </nav>
 
-      <div class="title">
-        <h1>WE ARE AN AWESOME CREATIVE AGENCY</h1>
-        <hr>
-        <p>
+      <div class="header__title-text">
+        <h1 class="heading-big">We are an awesome Creative Agency</h1>
+        <hr class="hr hr--blue">
+        <p class="text-block text-block--header">
           This is Photoshop's version of Lorem ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem <br>
           lorem bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh <br>
           vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
         </p>
-        <button><a id="learn-more" href="#">LEARN MORE</a></button>
+        <a class="btn btn--blue" href="#our-story">Learn More</a>
       </div>
     </header>
 
@@ -48,26 +48,23 @@
 
     <!-- beginning of main section -->
 
-    <main>
+    <main class="main">
       <!-- beginning of our story section -->
 
-      <section id="our-story">
-        <div class="container">
-          <div class="story">
-            <img src="img/logo-big.png" alt="" />
+      <section id="our-story" class="section our-story">
+        <div class="our-story__content">
+          <div class="our-story__logo">
+            <img class="img--logo-big" src="img/logo-big.png" alt="" />
           </div>
-          <div class="story-text">
-            <h2>Our Story</h2>
-            <br>
-            <p>This is Photoshop's version of Lorem ipsum. Proin gravida nibh vel velit auctor <br> aliquet. Aenean sollicitudin, lorem
+          <div class="our-story__text">
+            <h2 class="heading-section heading-section--our-story">Our Story</h2>
+            <p class="text-block--our-story">This is Photoshop's version of Lorem ipsum. Proin gravida nibh vel velit auctor <br> aliquet. Aenean sollicitudin, lorem
             lorem bibendum auctor, nisi elit consequat ipsum, <br> nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
             vulputate cursus</p>
-            <br>
-            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. <br>
+            <p class="text-block--our-story">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. <br>
             Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociusqu <br>
             ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            <br>
-            <button><a id="learn-more" href="#">LEARN MORE</a></button>
+            <a class="btn btn--blue" id="learn-more" href="#">LEARN MORE</a>
           </div>
         </div>
       </section>
@@ -76,94 +73,100 @@
 
       <!-- beginning of video section -->
 
-      <section id="video">
-        <img src="img/play.png" alt="play-button" />
-        <h3>Watch our story</h3>
+      <section class="section section--background-img video-section" id="video">
+        <img class="img img--play" src="img/play.png" alt="play-button" />
+        <h3 class="heading-small heading-small--white">Watch our story</h3>
       </section>
 
       <!-- beginning of expertise section -->
 
-      <section id="expertise">
-        <h2>Expertise</h2>
-        <p class="sub-headline">This is a definitive list of all the things we are good at</p>
-        <hr />
-        <div class="expertise-all">
-          <div class="expertise-elements element1">
-            <img src="img/screen.png" alt="" />
-            <h3>Web Design & Development</h3>
-            <p>We designed this awesome website. Is there really anything else we need to say?</p>
+      <section class="section expertise-section" id="expertise">
+        <h2 class="heading-section">Expertise</h2>
+        <p class="heading-section__text">This is a definitive list of all the things we are good at</p>
+        <hr class="hr"/>
+        <div class="expertise">
+          <div class="expertise__elements expertise__elements--element1">
+            <img class="img expertise__img" src="img/screen.png" alt="" />
+            <h3 class="heading-small">Web Design & Development</h3>
+            <p class="text-block expertise__elements__text">We designed this awesome website. Is there really anything else we need to say?</p>
           </div>
-          <div class="expertise-elements element2">
-            <img src="img/pen.png" alt="" />
-            <h3>Branding Identity</h3>
-            <p>Are you an infamous drug dealer on the run. We can provide you with a new identity.</p>
+          <div class="expertise__elements expertise__elements--element2">
+            <img class="img expertise__img" src="img/pen.png" alt="" />
+            <h3 class="heading-small">Branding Identity</h3>
+            <p class="text-block expertise__elements__text">Are you an infamous drug dealer on the run. We can provide you with a new identity.</p>
           </div>
-          <div class="expertise-elements element3">
-            <img src="img/mobile.png" alt="" />
-            <h3>Mobile App</h3>
-            <p>Smartphones are completely overrated. Please leave us alone with your app ideas.</p>
+          <div class="expertise__elements expertise__elements--element3">
+            <img class="img expertise__img" src="img/mobile.png" alt="" />
+            <h3 class="heading-small">Mobile App</h3>
+            <p class="text-block expertise__elements__text">Smartphones are completely overrated. Please leave us alone with your app ideas.</p>
           </div>
-          <div class="expertise-elements element4">
-            <img src="img/graph.png" alt="" />
-            <h3>Search Engine Optimization</h3>
-            <p>Are you worried that Google doesn't know enough about you? We will feed them your data.</p>
+          <div class="expertise__elements expertise__elements--element4">
+            <img class="img expertise__img" src="img/graph.png" alt="" />
+            <h3 class="heading-small">Search Engine Optimization</h3>
+            <p class="text-block expertise__elements__text">Are you worried that Google doesn't know enough about you? We will feed them your data.</p>
           </div>
-          <div class="expertise-elements element5">
-            <img src="img/gameboy.png" alt="" />
-            <h3>Game Development</h3>
-            <p>We are also really, really good at video games. We play Minecraft all the time.</p>
+          <div class="expertise__elements expertise__elements--element5">
+            <img class="img expertise__img" src="img/gameboy.png" alt="" />
+            <h3 class="heading-small">Game Development</h3>
+            <p class="text-block expertise__elements__text">We are also really, really good at video games. We play Minecraft all the time.</p>
           </div>
-          <div class="expertise-elements element6">
-            <img src="img/heart.png" alt="" />
-            <h3>Made with Love</h3>
-            <p>This is not true. I hate my job. Josh ate all of my snacks again. Get me out of here. Please.</p>
+          <div class="expertise__elements expertise__elements--element6">
+            <img class="img expertise__img" src="img/heart.png" alt="" />
+            <h3 class="heading-small">Made with Love</h3>
+            <p class="text-block expertise__elements__text">This is not true. I hate my job. Josh ate all of my snacks again. Get me out of here. Please.</p>
           </div>
         </div>
       </section>
 
       <!-- beginning of team section -->
 
-      <section id="team">
-        <h2>Meet our amazing team</h2>
-        <p class="sub-headline">They are so amazing that they can't show their faces</p>
-        <hr />
-        <div class="photos container">
-          <div class="photo-box">
-            <div class="photo-placeholder"></div>
-            <h3>Semf Ucuk</h3>
-            <p>CEO & FOUNDER</p>
+      <section class="section section--background-img section-team" id="team">
+        <div class="section_content">
+          <h2 class="heading-section">Meet our amazing team</h2>
+          <p class="heading-section__text">They are so amazing that they can't show their faces</p>
+          <hr class="hr hr--blue"/>
+          <div class="gallery">
+            <div class="gallery__left">
+              <div class="gallery__photo-box">
+                <div class="gallery__photo-box__placeholder"></div>
+                <h3 class="heading-small">Semf Ucuk</h3>
+                <p class="gallery__photo-box__text">CEO & FOUNDER</p>
+              </div>
+              <div class="gallery__photo-box">
+                <div class="gallery__photo-box__placeholder"></div>
+                <h3 class="heading-small">Dik Adalin</h3>
+                <p class="gallery__photo-box__text">ENGINEERING</p>
+              </div>
+            </div>
+            <div class="gallery__right">
+              <div class="gallery__photo-box">
+                <div class="gallery__photo-box__placeholder"></div>
+                <h3 class="heading-small">Jeng Kol</h3>
+                <p class="gallery__photo-box__text">DESIGNER</p>
+              </div>
+              <div class="gallery__photo-box">
+                <div class="gallery__photo-box__placeholder"></div>
+                <h3 class="heading-small">Pet Romak</h3>
+                <p class="gallery__photo-box__text">MARKETING</p>
+              </div>
+            </div>
           </div>
-          <div class="photo-box">
-            <div class="photo-placeholder"></div>
-            <h3>Dik Adalin</h3>
-            <p>ENGINEERING</p>
-          </div>
-          <div class="photo-box">
-            <div class="photo-placeholder"></div>
-            <h3>Jeng Kol</h3>
-            <p>DESIGNER</p>
-          </div>
-          <div class="photo-box">
-            <div class="photo-placeholder"></div>
-            <h3>Pet Romak</h3>
-            <p>MARKETING</p>
-          </div>
+          <p class="text-block text-block--white">Become part of the dream team. Join us. Now.</p>
+          <a class="btn btn--blue" href="">We are hiring</a>
         </div>
-        <p>Become part of the dream team. Join us. Now.</p>
-        <button>WE ARE HIRING</button>
       </section>
 
       <!-- beginning of contact section -->
 
-      <section id="contact" class="container">
+      <section id="contact-id" class="section section-contact-clients">
 
-        <div id="give-us-contact" class="">
-          <h2>Give us good news</h2>
-          <form id="contact-form" action="">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Subject" />
-            <textarea
+        <div class="contact">
+          <h2 class="heading-section heading-section--mrg-lrg">Give us good news</h2>
+          <form id="contact-us" class="contact__form" action="">
+            <input class="input-text" type="text" placeholder="Name" />
+            <input class="input-text" type="text" placeholder="Email" />
+            <input class="input-text" type="text" placeholder="Subject" />
+            <textarea class="textarea"
               name=""
               id=""
               cols="30"
@@ -171,27 +174,25 @@
               placeholder="Your Message"
             ></textarea>
           </form>
-          <button type="submit" form="contact-form" value="Submit">
-            SUBMIT
-          </button>
+          <a class="btn btn--blue" href="">Submit</a>
         </div>
 
-        <div id="give-us-clients" class="clients-elements">
-          <h2>Our happy client</h2>
-          <div id="client-logos" class="container">
-            <div id="logos-left" class="container">
-              <img class="logo-big" src="./img/Zara_Logo.png" alt="" />
-              <img class="logo-big" src="./img/1280px-Barneys_New_York_Logo.png" alt="" />
-              <img class="logo-big" src="./img/Calvin_klein_logo.png" alt="" />
-              <img class="logo-small" src="./img/Converse_logo.png" alt="" />
-              <img class="logo-small" src="./img/1280px-Levi's_logo.png" alt="" />
+        <div class="clients">
+          <h2 class="heading-section heading-section--mrg-lrg">Our happy client</h2>
+          <div class="client-logos">
+            <div class="client-logos_col">
+              <img class="client-logos__img client-logos__img--big" src="./img/Zara_Logo.png" alt="" />
+              <img class="client-logos__img" src="./img/1280px-Barneys_New_York_Logo.png" alt="" />
+              <img class="client-logos__img" src="./img/Calvin_klein_logo.png" alt="" />
+              <img class="client-logos__img" src="./img/Converse_logo.png" alt="" />
+              <img class="client-logos__img" src="./img/1280px-Levi's_logo.png" alt="" />
             </div>
-            <div id="logos-right" class="container">
-              <img class="logo-big" src="./img/Logo_of_Mango_(new).png" alt="" />          
-              <img class="logo-big" src="./img/1280px-Gucci_Logo.png" alt="" />            
-              <img class="logo-small" src="./img/1280px-Logo_NIKE.png" alt="" />
-              <img class="logo-small" src="./img/Puma_Logo.png" alt="" />
-              <img class="logo-big" src="./img/Billabong.png" alt="" />
+            <div class="client-logos__col">
+              <img class="client-logos__img" src="./img/Logo_of_Mango_(new).png" alt="" />          
+              <img class="client-logos__img" src="./img/1280px-Gucci_Logo.png" alt="" />            
+              <img class="client-logos__img" src="./img/1280px-Logo_NIKE.png" alt="" />
+              <img class="client-logos__img" src="./img/Puma_Logo.png" alt="" />
+              <img class="client-logos__img" src="./img/Billabong.png" alt="" />
             </div>
           </div>
         </div>
@@ -200,62 +201,66 @@
 
     <!-- beginning of our footer  -->
 
-    <footer class="">
+    <footer class="section section--background-img footer">
 
       <div class="footer-top container">
 
-        <section>
+        <section class="footer-top__col footer-top__col--about">
           <div class="logobox">
-            <img class="logo" src="img/logo.png" alt="logo" />
-            <p class="logo-text">tajam</p>
+            <img class="logobox__logo" src="img/logo.png" alt="logo" />
+            <p class="logobox__logo-text">tajam</p>
           </div>        
-          <p class="container">
+          <p class="footer-top__col__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
             fugiat sed dolor rem quas. Earum laboriosam ut eius. Ducimus
-            provident, doloremque voluptas nisi autem cumque reprehenderit sit
-            molestiae non officiis!
+            provident, doloremque voluptas.
           </p>
         </section>
 
-        <section id="our-studio">
-          <h3>OUR STUDIO</h3>
-          <p>
-            <img src="./img/big104.png" alt="" />Ruko curuk, Jl. Radio luar dalem jos<br />No.
-            12 - 13, Kalideres - Jakarta Barat<br />11480 - Indonesia
-          </p>
-          <p><img src="./img/phone351.png" alt="" />(+62) 21-2224 333</p>
+        <section id="our-studio" class="footer-top__col footer-top__col--studio">
+          <h3 class="heading-small heading-small--footer">OUR STUDIO</h3>
+          <div class="studio-address">
+            <img class="studio-address__img" src="./img/big104.png" alt="" />
+            <p>
+              Ruko curuk, Jl. Radio luar dalem jos
+              <br />
+              No. 12 - 13, Kalideres - Jakarta Barat
+              <br />
+              11480 - Indonesia
+            </p>
+          </div>
+          <div class="studio-address">
+            <img class="studio-address__img" src="./img/phone351.png" alt="" />
+            <p>(+62) 21-2224 333</p>
+          </div>
         </section>
 
-        <section>
-          <h3>STAY IN TOUCH</h3>
-          <form action="" id="newsletter-form">
-            <input type="email" name="email-newsletter" id="email-newsletter" placeholder="Subscribe our newsletter">
-            <input type="submit" id="btn-newsletter" value="">
+        <section class="footer-top__col footer-top__col--newsletter">
+          <h3 class="heading-small heading-small--footer">STAY IN TOUCH</h3>
+          <form class="newsletter-form">
+            <input class="newsletter-form__input" type="email" name="email-newsletter" id="email-newsletter" placeholder="Subscribe to our newsletter">
+            <input class="newsletter-form__btn" type="submit" id="btn-newsletter" value="">
           </form>
-          <ul class="container" id="social-networks">
-            <li><img src="./img/facebook.png" alt="facebook" /></li>
-            <li><img src="./img/twitter.png" alt="twitter" /></li>
-            <li><img src="./img/dribbble.png" alt="dribbble" /></li>
-            <li><img src="./img/instagram.png" alt="instagram" /></li>
-            <li><img src="./img/gplus.png" alt="google plus" /></li>
-            <li><img src="./img/youtube.png" alt="youtube" /></li>
-          </ul>
+          <div class="social-media">
+            <img class="social-media__logo" src="./img/facebook.png" alt="facebook" />
+            <img class="social-media__logo" src="./img/twitter.png" alt="twitter" />
+            <img class="social-media__logo" src="./img/dribbble.png" alt="dribbble" />
+            <img class="social-media__logo" src="./img/instagram.png" alt="instagram" />
+            <img class="social-media__logo" src="./img/gplus.png" alt="google plus" />
+            <img class="social-media__logo" src="./img/youtube.png" alt="youtube" />
+          </div>
         </section>
 
       </div>
 
-      <div class="footer-bottom container">
-
-        <nav class="footer-menu">
-          <ul class="container">
-            <li>HELP</li>
-            <li>TERMS & CONDITIONS</li>
-            <li>PRIVACY</li>
-          </ul>
-        </nav>
-
-        <span>Copyright &copy; 2015 - Tajem Creative</span>
-      </div>  
+      <nav class="navbar navbar--footer">
+        <div class="navbar__nav-list navbar__nav-list--footer">
+          <a class="navbar__nav-list-items">HELP</a>
+          <a class="navbar__nav-list-items">TERMS & CONDITIONS</a>
+          <a class="navbar__nav-list-items">PRIVACY</a>
+        </div>
+        <div class="copyright-text">Copyright &copy; 2015 - Tajem Creative</div>
+      </nav>
 
     </footer>
 
